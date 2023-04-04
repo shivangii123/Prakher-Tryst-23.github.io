@@ -25,3 +25,13 @@ function handelBack() {
 }
 var vid = document.getElementById("myVideo");
 vid.playbackRate = 0.85;
+
+//dropdown
+function toggleshow() {
+    var y = document.getElementById("options2");
+    if (y.style.display === "none") {
+      y.style.display = "block";
+    } else {
+      y.style.display = "none";
+    }
+  }
