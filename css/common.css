@@ -137,6 +137,7 @@ nav #icon {
     display: block;
     height: 40px;
     margin-top: 20px;
+    margin-right: 10px;
     float: right;
   }
 
@@ -202,7 +203,7 @@ nav #icon {
 
 .ftlist {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .a,
@@ -235,14 +236,28 @@ nav #icon {
   width: 350px;
 }
 .c {
-  color: rgb(248, 97, 83);
+  color: rgb(255, 255, 255);
   width: 25%;
 }
+.c a{
+  width: max-content;
+}
 .c img{
-  margin: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   height: 40px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.email{
+  display: flex;
+}
+.email img{
+  margin-left: 40%;
+}
+.email span{
+  margin-top: 20px;
+  margin-left: 15px;
 }
 #map {
   height: 400px;
@@ -269,7 +284,9 @@ nav #icon {
   }
   .ftlist {
       display: flex;
+      width: max-content;
       flex-direction: row;
+      margin: auto;
   }
   .c{
       height: 20px;
@@ -278,6 +295,7 @@ nav #icon {
       margin-top: 10px;
   }
   .c img{
+      padding-left: none;
       margin-left: 5px;
       margin-right: 5px;
       margin-bottom: none;

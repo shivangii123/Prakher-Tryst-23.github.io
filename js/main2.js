@@ -29,9 +29,15 @@ vid.playbackRate = 0.85;
 //dropdown
 function toggleshow() {
     var y = document.getElementById("options2");
+    var z = document.getElementById("menulogo");
+    z.src = "images/close.png";
+
     if (y.style.display === "none") {
-      y.style.display = "block";
-    } else {
-      y.style.display = "none";
+        y.style.display = "block";
+        z.src = "images/close.png";
     }
-  }
+    else {
+        y.style.display = "none";
+        z.src = "images/hamburger.png";
+    }
+}
