@@ -193,129 +193,207 @@ ul li a {
 
 
 /* Sponsor */
-@media (hover:hover){
-  #wrapper{
-    height:100vh;
-    background-color: #5f927d;
-    overflow-x:hidden;
-    overflow-y:auto;
-  }
+#wrapper{
+  height:100vh;
+  background-color: #5f927d;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+.container{
+  height:100%;
+  max-width:1200px;
+  margin:0 auto;
+  padding:20px;
+}
+/* .containerh1{
+  margin: 20px 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+} */
+
+.gallery{
+
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
   
-  .container{
-    height:100%;
-    max-width:1200px;
-    margin:0 auto;
-    padding:20px;
-  }
-  
+}
+.container h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 722px) {
   .container h1{
-    margin: 20px 100px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 3rem;
-  }
-  
-  .gallery{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
   }
-  @media only screen and (max-width: 722px) {
-    .gallery{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  
-  .card {
-    width:32%;
-    position:relative;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  @media only screen and (max-width: 722px) {
-    .card{
-      width:60%;
-    }
-  }
-  .card img{
-    
-    width:100%;
-    height:100%;
-    filter: grayscale(100%);
-    box-shadow: 0 0 20px #333;
-    object-fit: cover;
-  }
-  
-  .card:hover {
-    transform: scale(1.03);
-    transition: 0.5s;
-    filter: drop-shadow(0 0 10px #333);
-  }
-  
-  
-  .card:hover img {
-    filter: grayscale(0%);
-  }
-  
-  .card figcaption{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 25px;
-    width: 100%;
-    height: 20%;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    opacity: 0;
-    border-radius: 0 0 10px 10px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-    transition: 0.3s;
-  }
-  
-  .card:hover figcaption {
-    opacity: 1;
-    transform: scale(1.03);
-  }  
+
+  .gallery{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
 
   }
+
+}
+
+.card {
+  width:100%;
+  position:relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img{
+  
+  width:100%;
+  height:100%;
+    filter: grayscale(100%);
+  box-shadow: 0 0 20px #333;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+  filter: drop-shadow(0 0 10px #333);
+}
+
+
+.card:hover img {
+  filter: grayscale(0%);
+}
+
+.card figcaption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  width: 100%;
+  height: 20%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.3s;
+}
+
+.card:hover figcaption {
+  opacity: 1;
+  transform: scale(1.03);
+}  
 
 
   /* Team*/
-@media (hover:hover){
-
-  .cardteam img{
+  .containerteam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     
-    width:100%;
-    height:100%;
-    box-shadow: 0 0 20px #333;
-    object-fit: cover;
-  }
-  .cardteam:hover {
-    transform: scale(1.03);
-    transition: 0.5s;
-    filter: drop-shadow(0 0 10px #333);
-  }
-  .cardteam:hover figcaption {
-    opacity: 1;
-    transform: scale(1.03);
-  }  
-
-  .cardteam {
-    width:32%;
-    position:relative;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  @media only screen and (max-width: 722px) {
-    .cardteam{
-      width:60%;
     }
-  }
-}
+ 
+    .team-member {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+     .carddiv{
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      flex-direction: column;
+      width:32%;
+      /* height:20%; */
+      padding:0px;
+      margin-bottom: 10px;
+      /* border:2px solid blue; */
+    }
+    .carddiv img{
+      width:100%;
+      height:100%;
+      box-shadow: 0 0 20px #333;
+      object-fit: cover;
+    
+    }
+    .carddiv img:hover{
+      transform: scale(1.03);
+        transition: 0.5s;
+        filter: drop-shadow(0 0 10px #333);
+    }
+    .carddiv h2,h3{
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      font-size: 2rem;
+      font-family: cursive;
+      text-shadow: 1px 1px 2px rgb(255, 0, 153), 0 0 25px rgb(19, 103, 214), 0 0 5px rgb(12, 3, 124);
+      font-weight: bold;
+    }
+    .connect{
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      font-size: 2rem;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color:rgb(7, 251, 113);
+      text-shadow: 1px 1px 2px rgb(255, 0, 153), 0 0 25px rgb(19, 103, 214), 0 0 5px rgb(12, 3, 124);
+      font-weight: bold;
+    }
+    @media only screen and (max-width:868px) {
+      .containerteam{
+        margin-top: 100px;
+      }
+      
+      .team-member{
+          display: grid;
+          gap: 2rem; 
+          grid-template-columns: repeat(1, 1fr); 
+      }
+      .carddiv{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        width:100%;
+        padding:0px;
+       
+      }
+      .carddiv h2,h3{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        font-size: 20px;
+       
+      }
+      .carddiv img{
+        width:100%;
+        height:100%;
+        box-shadow: 0 0 20px #333;
+        object-fit: cover;
+      
+      }
+    }
+    @media only screen and (max-width:389px) {
+      .containerteam{
+        margin-top: 100px;
+      }
+      .team-member{
+          display: grid;
+          gap: 2rem; 
+          grid-template-columns: repeat(1, 1fr); 
+      }
+       
+    }
