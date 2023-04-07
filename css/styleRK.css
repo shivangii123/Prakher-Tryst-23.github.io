@@ -5,19 +5,10 @@
 .main2 {
     display: flex;
 }
-.CTR{
-    align-items: center;
-    justify-content: center;
-}
 .main2-left {
     width: 25%;
     align-items: center;
     justify-content: center;
-}
-#HD{
-    margin: auto;
-    font-size: 400%;
-    color: #ffffff;
 }
 
 .main2-right {

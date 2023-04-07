@@ -4,6 +4,19 @@ body {
   background-color: #000000;
 }
 
+.CTR{
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#HD{
+  width: max-content;
+  margin: auto;
+  color: #ffffff;
+  font-size: 3rem;
+}
 .fg-img {
   position: absolute;
   top: 40%;
@@ -412,7 +425,7 @@ nav #icon {
 @media (max-width:800px) {
   #menuToggle {
       display: block;
-      width: 80%;
+      width: 10%;
   }
 
 }
