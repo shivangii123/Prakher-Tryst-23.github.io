@@ -1,4 +1,20 @@
 
+// //dropdown
+// function toggleshow() {
+//     var y = document.getElementById("options2");
+//     var z = document.getElementById("menulogo");
+//     z.src = "images/close.png";
+
+//     if (y.style.display === "none") {
+//         y.style.display = "block";
+//         z.src = "images/close.png";
+//     }
+//     else {
+//         y.style.display = "none";
+//         z.src = "images/hamburger.png";
+//     }
+// }
+
 // Animation
 
 // const canvas = document.querySelector("canvas");
@@ -74,13 +90,3 @@ function animate() {
 
 init();
 animate();
-
-//dropdown
-function toggleshow() {
-    var y = document.getElementById("options2");
-    if (y.style.display === "none") {
-      y.style.display = "block";
-    } else {
-      y.style.display = "none";
-    }
-  }

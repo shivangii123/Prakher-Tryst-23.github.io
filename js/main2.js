@@ -1,3 +1,18 @@
+//dropdown
+function toggleshow() {
+    var y = document.getElementById("options2");
+    var z = document.getElementById("menulogo");
+    z.src = "images/close.png";
+
+    if (y.style.display === "none") {
+        y.style.display = "block";
+        z.src = "images/close.png";
+    }
+    else {
+        y.style.display = "none";
+        z.src = "images/hamburger.png";
+    }
+}
 //functioning
 window.addEventListener("popstate", handelBack);
 function ShowSE(ID) {
@@ -21,23 +36,5 @@ function handelBack() {
     var i;
     for (i = 0; i < x.length; i++) {
         x[i].style.display = 'none';
-    }
-}
-var vid = document.getElementById("myVideo");
-vid.playbackRate = 0.85;
-
-//dropdown
-function toggleshow() {
-    var y = document.getElementById("options2");
-    var z = document.getElementById("menulogo");
-    z.src = "images/close.png";
-
-    if (y.style.display === "none") {
-        y.style.display = "block";
-        z.src = "images/close.png";
-    }
-    else {
-        y.style.display = "none";
-        z.src = "images/hamburger.png";
     }
 }

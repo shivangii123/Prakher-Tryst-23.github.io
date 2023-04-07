@@ -2,48 +2,27 @@
     margin: 0px;
     background-color: #000000;
 }
-
-.banner {
-    height: 200px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    position: relative;
-    font-size: 600%;
-    color: #ffffff;
-    font-family: serif;
-    /* background-color: rgba(156, 156, 148, 0.592); */
-}
-
-.flex {
-    display: flex;
-}
-
 .main2 {
     display: flex;
 }
-
-.main2-left {
-    width: 25%;
-    /* height: 400px; */
-    /* background: black; */
+.CTR{
     align-items: center;
     justify-content: center;
 }
-
-.main2-left button {
-    /* height: 50px; */
-    width: 100px;
-    border: none;
-    /* margin-top: 40px; */
-    margin-left: 35%;
+.main2-left {
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+}
+#HD{
+    margin: auto;
+    font-size: 400%;
+    color: #ffffff;
 }
 
 .main2-right {
     margin-top: 0px;
     width: 100%;
-    /* background: black; */
 }
 
 .main2-btn {
@@ -69,13 +48,9 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    /* background-color: rgba(213, 223, 104, 0.308); */
 }
 
 .card {
-    /* padding: 0.5rem;  */
-    /* background: goldenrod; */
-    /* margin: 0.5rem; */
     height: 4rem;
 }
 
@@ -105,15 +80,11 @@
     float: left;
     height: 400px;
     width: 39%;
-    /* background:#bc6c81; */
 }
 
 .SE-left img {
     margin-left: 20%;
-    /* margin-right: 15%; */
-    /* margin-top: 10%; */
     width: 70%;
-    /* border: solid 3px red; */
     border: solid 3px goldenrod;
 }
 
@@ -123,7 +94,6 @@
     float: right;
     height: auto;
     width: 60%;
-    /* background-color:#bc6c81; */
 }
 
 .SE-text {
@@ -177,7 +147,6 @@ b {
 
     .main2-right {
         width: 100%;
-        /* margin-left: 10px; */
     }
 
     .main2-btn button {
@@ -209,7 +178,6 @@ b {
 
     .SE-left {
         border-right: none;
-        /* background:#bc6c81; */
         width: 100%;
         margin: 0px;
         margin-bottom: 20%;
@@ -234,7 +202,6 @@ b {
         width: 100%;
         padding-top: 0px;
         height: auto;
-        /* background-color:#bc6c81; */
     }
 
     .SE-btn {
